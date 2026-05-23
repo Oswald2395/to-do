@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artist Portfolio | 2D & 3D Gallery</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Page Loader -->
+    <div class="loader">
+        <div class="loader-content">
+            <h1>ARTIST</h1>
+            <p>Loading Portfolio...</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">ARTIST<span>.</span></div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="fade-in">Digital Art & 3D Visualization</h1>
+            <p class="fade-in-delay">Exploring dimensions through pixels and polygons.</p>
+            <a href="#gallery" class="btn fade-in-delay-2">View Works</a>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <h2 class="section-title">Selected Works</h2>
+            
+            <!-- Filters -->
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="2d">2D Art</button>
+                <button class="filter-btn" data-filter="3d">3D Renders</button>
+                <button class="filter-btn" data-filter="video">Videos</button>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="gallery-grid">
+                
+                <!-- 2D ART ITEMS (Manually Add Here) -->
+                <!-- Example Item 1 -->
+                <div class="gallery-item" data-category="2d">
+                    <img src="uploads/2d/artwork1.jpg" alt="2D Artwork 1" loading="lazy">
+                    <div class="overlay">
+                        <h3>Digital Painting</h3>
+                        <p>2D Concept Art</p>
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                
+                <!-- Example Item 2 -->
+                <div class="gallery-item" data-category="2d">
+                    <img src="uploads/2d/artwork2.png" alt="2D Artwork 2" loading="lazy">
+                    <div class="overlay">
+                        <h3>Character Design</h3>
+                        <p>Illustration</p>
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+
+                <!-- 3D ART ITEMS (Manually Add Here) -->
+                <!-- Example Item 3 -->
+                <div class="gallery-item" data-category="3d">
+                    <img src="uploads/3d/render1.jpg" alt="3D Render 1" loading="lazy">
+                    <div class="overlay">
+                        <h3>Cyberpunk City</h3>
+                        <p>Blender Render</p>
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+
+                <!-- Example Item 4 -->
+                <div class="gallery-item" data-category="3d">
+                    <img src="uploads/3d/render2.jpg" alt="3D Render 2" loading="lazy">
+                    <div class="overlay">
+                        <h3>Abstract Shape</h3>
+                        <p>Cinema 4D</p>
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+
+                <!-- VIDEO ITEMS -->
+                <!-- Example Item 5 -->
+                <div class="gallery-item video-item" data-category="video">
+                    <video src="uploads/3d/animation1.mp4" muted loop playsinline></video>
+                    <div class="overlay">
+                        <h3>Motion Study</h3>
+                        <p>Animation Reel</p>
+                        <i class="fas fa-play"></i>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About The Artist</h2>
+                    <p>I am a digital artist specializing in 2D illustration and 3D modeling. With a passion for creating immersive visual experiences, I blend traditional artistic principles with modern technology.</p>
+                    <p>My work ranges from character concepts to architectural visualization and abstract motion graphics.</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat">
+                        <h3>5+</h3>
+                        <p>Years Experience</p>
+                    </div>
+                    <div class="stat">
+                        <h3>100+</h3>
+                        <p>Projects Completed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <p>Interested in collaboration? Feel free to reach out.</p>
+            
+            <form class="contact-form" id="contactForm">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+            <p class="form-status"></p>
+
+            <div class="social-links">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-artstation"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Artist Portfolio. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <span class="close-lightbox">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <video class="lightbox-content" id="lightbox-video" controls style="display:none;"></video>
+        <div class="caption" id="caption"></div>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
